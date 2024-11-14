@@ -1,47 +1,225 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Список Фильмов</title>
-   
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
+<html>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Мой Проект</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="home.html">Главная</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="films.html">Фильмы</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">О нас</a>
-                </li>
-            </ul>
+<style>
+    .card-hover:hover {
+        transform: translateY(-10px); 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Сергей Бурунов</title>
+</head>
+
+<body data-spy="scroll" data-bs-target="#myScrollspy" data-offset="20">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://ru.wikipedia.org/wiki/Бурунов,_Сергей_Александрович">Сергей Бурунов</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="info.html">Основная информация</a></li>
+                    <li class="nav-item"><a class="nav-link" href="films.html">Список фильмов</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-  
-    <div class="alert alert-warning m-3" role="alert">
-        Внимание! Эта страница сейчас находится в разработке.
-    </div>
+    <div class="container my-4">
+        <h2 class="mb-4">Основная информация об актёре</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Сергей Бурунов</h3>
+                <p><strong>Дата рождения:</strong> 6 марта 1977 года</p>
+                <p><strong>Полных лет:</strong> 47</p>
+                <p><strong>Фильмов:</strong> 100+</p>
+                <p><strong>Жанры:</strong> Драма, криминал, комедия, триллер, боевик, детектив.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="scale_1200 (1).png" class="img-fluid rounded" alt="Фото актёра">
+            </div>
+        </div>
 
-   
-    <div class="container">
-        <h1>Список Фильмов</h1>
-      
-    </div>
+        <h2 class="mt-5">Лучшие фильмы и сериалы</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="https://www.kinopoisk.ru/series/913033/" class="text-decoration-none">
+                    <div class="card card-hover mb-4">
+                        <img src="1920x.webp" class="card-img-top" alt="Полицейский с рублевки">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Полицейский с рублевки</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://wink.ru/promo?utm_source=yandex&utm_medium=cpc&utm_campaign=p:wink_originals_search.sys:search.sem:originals.t:key.d:all%7C108015226&utm_content=gbid:5438500858%7Cad_id:16085618022%7Ccoef:0%7Cret_id:51313960649&utm_term=keyword:слово%20пацана%7Cphrase_id:51313960649%7Cposition_type:premium%7Cposition:1%7Cdevice:desktop%7Cregion:Самара&yclid=250810607743008767" class="text-decoration-none">
+                    <div class="card card-hover mb-4">
+                        <img src="background_15x.webp" class="card-img-top" alt="Слово Пацана">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Слово Пацана</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://premier.one/show/mylodrama-bez-tsenzury?utm_medium=cpc&utm_source=yandex&utm_campaign=perform_mg_premier_ya_dsa_all-feed_perf_epk_search_rf%7C109822755&utm_term=---autotargeting&utm_content=109822755_5436161377_1839598424539372293%7Ck50id%7C0100000051255236199_51255236199%7Ccid%7C109822755%7Cgid%7C5436161377%7Caid%7C1839598424539372293%7Cadp%7Cno%7Cpos%7Cpremium2%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7Cmain&k50id=0100000051255236199_51255236199&yclid=4686832095362285567" class="text-decoration-none">
+                    <div class="card card-hover mb-4">
+                        <img src="Lc7Kcj7TYFo6SW6rrq46A.jpg" class="card-img-top" alt="Мылодрама">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Мылодрама</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.kinopoisk.ru/special/perf/?type=takemyruble2&utm_source=imp_direct_search&utm_medium=paid_performance&utm_campaign=114801959%7CMSCAMP-2_[KP-P]_%7BWS:S%7D_RU-225_goal-PL_Generic-OtherTitles-Base-*1044487&utm_term=Домашний%20арест&utm_content=k50id%7C0100000053284129690_53284129690%7Ccid%7C114801959%7Cgid%7C5500175201%7Caid%7C16558604178%7Cpos%7Cpremium1%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7Ckpid%7C1044487&source=kinopoisk_paid_performance_imp_direct_search_114801959%7Cucnt_k50id%7C0100000053284129690_53284129690%7Ccid%7C114801959%7Cgid%7C5500175201%7Caid%7C16558604178%7Cpos%7Cpremium1%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7Ckpid%7C1044487&yclid=18274899435207786495" class="text-decoration-none">
+                    <div class="card card-hover mb-4">
+                        <img src="6MR4KCWoqeoSpCMfVQym6ea5jqBskF6TZpDXqkdR-optimized_orig.jpg" class="card-img-top" alt="Домашний Арест">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Домашний Арест</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.kinopoisk.ru/special/perf/?type=moretv&filmId=488b64fd12a9c7dab5c4296c8023bf5d&utm_source=imp_direct_search&utm_medium=paid_performance&utm_campaign=114789805%7CMSCAMP-2_[KP-P]_%7BWS:S%7D_RU-225_goal-PL_Serials-Ивановы-Ивановы*1044102&utm_term=Ивановы&utm_content=INTid%7C0100000053278390850_53278390850%7Ccid%7C114789805%7Cgid%7C5500027848%7Caid%7C16557439504%7Cpos%7Cpremium1%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7Cretid%7C0%7Ckpid%7C1044102&source=kinopoisk_paid_performance_imp_direct_search_114789805%7Cucnt_INTid%7C0100000053278390850_53278390850%7Ccid%7C114789805%7Cgid%7C5500027848%7Caid%7C16557439504%7Cpos%7Cpremium1%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7Cretid%7C0%7Ckpid%7C1044102%7C&yclid=2425655347611172863" class="text-decoration-none">
+                    <div class="card card-hover mb-4">
+                        <img src="179634.jpg" class="card-img-top" alt="Ивановы-Ивановы">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Ивановы-Ивановы</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.kinopoisk.ru/film/5047464/" class="text-decoration-none">
+                    <div class="card card-hover mb-4">
+                        <img src="scale_1200.jfif" class="card-img-top" alt="Бременские музыканты">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Бременские музыканты</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.kinopoisk.ru/special/perf/?type=takemyruble2&utm_source=imp_direct_search&utm_medium=paid_performance&utm_campaign=114800965%7CMSCAMP-2_[KP-P]_%7BWS:S%7D_RU-225_goal-PL_Generic-EPK&utm_term=---autotargeting&utm_content=INTid%7C0100000053283048251_53283048251%7Ccid%7C114800965%7Cgid%7C5500153741%7Caid%7C16558470177%7Cpos%7Cpremium1%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7Ckpid%7C0&source=kinopoisk_paid_performance_imp_direct_search_114800965%7Cucnt_INTid%7C0100000053283048251_53283048251%7Ccid%7C114800965%7Cgid%7C5500153741%7Caid%7C16558470177%7Cpos%7Cpremium1%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7Ckpid%7C0%7C&yclid=5596504788755021823" class="text-decoration-none">
+                    <div class="card card-hover mb-4">
+                        <img src="e849adc8-01e8-5a15-a79c-0ccc4a52b69f.jfif" class="card-img-top" alt="Родные">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"> Родные </h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.kinopoisk.ru/special/perf/?type=takemyruble2&utm_source=imp_direct_search&utm_medium=paid_performance&utm_campaign=114801959%7CMSCAMP-2_[KP-P]_%7BWS:S%7D_RU-225_goal-PL_Generic-OtherTitles-Base-*1191043&utm_term=Содержанки&utm_content=k50id%7C0100000053284137648_53284137648%7Ccid%7C114801959%7Cgid%7C5500175286%7Caid%7C16558604607%7Cpos%7Cpremium1%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7Ckpid%7C1191043&source=kinopoisk_paid_performance_imp_direct_search_114801959%7Cucnt_k50id%7C0100000053284137648_53284137648%7Ccid%7C114801959%7Cgid%7C5500175286%7Caid%7C16558604607%7Cpos%7Cpremium1%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7Ckpid%7C1191043&yclid=14771542631337164799" class="text-decoration-none">
+                    <div class="card card-hover mb-4">
+                        <img src="w1500_51587576.jpg" class="card-img-top" alt="Содержанки">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Содержанки</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <h2 class="mt-5">Дополнительная информация</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Награды</h5>
+                        <p class="card-text">Премия «АПКиТ» (2018) — за лучшую роль второго плана «Полицейский с Рублёвки в Бескудниково»[70]
+                            Премия «ТЭФИ» (2019) — за лучшую роль в телесериале «Мылодрама»</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Любимое блюдо</h5>
+                        <p class="card-text">Любимое Блюдо - жаренная картошка.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Интересный факт</h5>
+                        <p class="card-text">Интересный факт - Сергей Бурунов перед карьерой актера учился в 
+                            авиационном училище, но написав рапорт, перевелся в театральный университет.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-5">Фильмография</h2>
+        <table class="table table-bordered table-hover text-center mt-3">
+            <thead>
+                <tr>
+                    <th>Год</th>
+                    <th>Фильм</th>
+                    <th>Роль</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2016-2019</td>
+                    <td>Полицейский с Рублевки</td>
+                    <td>Владимир Яковлев</td>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td>Слово Пацана</td>
+                    <td>Отец Адидаса</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>Мылодрама</td>
+                    <td>Гендиректор канала СТВ</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>Домашний арест</td>
+                    <td>Заместитель Губернатора</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>Ивановы-Ивановы</td>
+                    <td>Отец</td>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td>Бременские музыканты</td>
+                    <td>Король</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>Родные</td>
+                    <td>Отец</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>Содержанки</td>
+                    <td>Заказчик</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
+
 </html>
