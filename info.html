@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Сергей Бурунов</title>
+</head>
+
+<body data-spy="scroll" data-bs-target="#myScrollspy" data-offset="20">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://ru.wikipedia.org/wiki/Бурунов,_Сергей_Александрович">Сергей Бурунов</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="info.html">Основная информация</a></li>
+                    <li class="nav-item"><a class="nav-link" href="films.html">Список фильмов</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-2">
+            <nav id="navbar-side" class="h-100 flex-column align-items-stretch pe-4 border-end bg-dark"
+                style="position: fixed; left: 0; height: 100%;">
+                <nav class="nav nav-pills flex-column ">
+                    <li class="nav-item"><a class="nav-link" href="#actorCarousel">Фото</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cards">Фильмы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#accordionExample">Краткая информация</a>
+                    </li>
+                </nav>
+            </nav>
+        </div>
+
+        <div class="col-9">
+            <div data-bs-spy="scroll" data-bs-target="#navbar-side" data-bs-smooth-scroll="true" class="scrollspy"
+                tabindex="0">
+                <div id="actorCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#actorCarousel" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#actorCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#actorCarousel" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#actorCarousel" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#actorCarousel" data-bs-slide-to="4"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="ce2fa380d99f40c043e19ce3a67f9587.jpg" class="d-block w-100" alt="Фото актёра">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="scale_1200 (1).png" class="d-block w-100" alt="Фото актёра">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="1357439.jpg" class="d-block w-100" alt="Фото актёра">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="scale_1200.png" class="d-block w-100" alt="Фото актёра">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="wnd.jpeg" class="d-block w-100" alt="Фото актёра">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#actorCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#actorCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                </div>
+
+
+                <div id="cards" class="container mt-3">
+                    <h2>Мои любимые филмы и сериалы с Сергеем Буруновым</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <img src="1920x.webp" class="card-img-top" alt="Постер фильма">
+                                <div class="card-body">
+                                    <h5 class="card-title">«Полице́йский с Рублёвки» (2016-2019)</h5>
+                                    <p class="card-text">Российский телесериал в жанре драмеди о полицейских из вымышленного ОМВД «Барвиха-Северное» в Москве-2.
+                                         С 5 сезона действия происходят в полицейской академии Барвихи. 
+                                    </p>
+                                    <a href="https://www.kinopoisk.ru/series/913033/" target="_blank"
+                                        class="btn btn-primary">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <img src="background_15x.webp" class="card-img-top" alt="Постер фильма">
+                                <div class="card-body">
+                                    <h5 class="card-title">Слово Пацана (2023)</h5>
+                                    <p class="card-text">Казань, начало 1989 года. Пока родители борются за выживание, подростки сбиваются в уличные банды и бьются за асфальт.</p>
+                                    <a href="https://wink.ru/promo?utm_source=yandex&utm_medium=cpc&utm_campaign=p:wink_originals_search.sys:search.sem:originals.t:key.d:all%7C108015226&utm_content=gbid:5438500858%7Cad_id:16085618022%7Ccoef:0%7Cret_id:51313960649&utm_term=keyword:слово%20пацана%7Cphrase_id:51313960649%7Cposition_type:premium%7Cposition:1%7Cdevice:desktop%7Cregion:Самара&yclid=250810607743008767" target="_blank"
+                                        class="btn btn-primary">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <img src="Lc7Kcj7TYFo6SW6rrq46A.jpg" class="card-img-top" alt="Постер фильма">
+                                <div class="card-body">
+                                    <h5 class="card-title">Мылодрама (2019)</h5>
+                                    <p class="card-text">Чтобы обрушить акции телеканала, совет директоров принимает решение посадить
+                                         в кресло генерального директора автозаправщика-недотепу и доверить ему съемки сериала.
+                                    </p>
+                                    <a href="https://premier.one/show/mylodrama-bez-tsenzury?utm_medium=cpc&utm_source=yandex&utm_campaign=perform_mg_premier_ya_dsa_all-feed_perf_epk_search_rf%7C109822755&utm_term=---autotargeting&utm_content=109822755_5436161377_1839598424539372293%7Ck50id%7C0100000051255236199_51255236199%7Ccid%7C109822755%7Cgid%7C5436161377%7Caid%7C1839598424539372293%7Cadp%7Cno%7Cpos%7Cpremium2%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7Cmain&k50id=0100000051255236199_51255236199&yclid=4686832095362285567" target="_blank"
+                                        class="btn btn-primary">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h2>Информация об актёре</h2>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Информация об актёре
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <b>Родился</b> 6 марта 1977 года в Москве..<br>
+                                <br>
+                                <b>Где учился</b>: С 1997 по 1998 год — студент эстрадного отделения Государственного эстрадно-циркового училища имени М. Н. Румянцева..<br>
+                                <br>
+                                <b>Личная жизнь</b>: Сергей Бурунов не женат. Болеет за ПФК ЦСКА.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

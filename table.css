@@ -1,0 +1,80 @@
+body {
+	background: LightGoldenrodYellow;
+}
+
+.header {
+	background: lightblue; 
+	padding: 10px 20px; 
+	display: flex;
+	justify-content: right; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc; 
+}
+
+th {
+    background-color: #f2f2f2; 
+    text-align: left; 
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; 
+}
+
+tr:hover { 
+    background-color: #e0e0e0; 
+}
+
+.form-container {
+    padding-left: 50px;
+}
+
+
+.table-form {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 5px;
+    border: 3px solid antiquewhite;
+    border-radius: 10px;
+}
+
+.fname {
+    background-color: rgb(255, 240, 223)
+}
+
+
+input::placeholder{
+    color:rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1000;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: rgb(255, 207, 149);
+}
+
+button:hover {
+    background-color: rgb(255, 236, 213);
+}
+
+
+
